@@ -1,0 +1,87 @@
+@import "mixins";
+
+@import "icons"; // icons!
+@import "global"; // global items
+@import "framework"; // pieces of the layout that make up large parts - header, nav, shield, content wrappers
+@import "pages";
+@import "forms";
+
+/***
+  * FONTS
+  ***/
+
+$mainFont: Helvetica, Arial, sans-serif;
+$headerFont: $mainFont;
+
+// CUSTOM FONTS
+$mainFont: Arial, Helvetica, sans-serif;
+$headerFont: $mainFont;
+
+// END CUSTOM FONTS
+
+@import "fonts-styles";
+
+// CUSTOM FONT STYLES
+// END CUSTOM FONT STYLES
+
+/***
+  * COLOURING
+  ***/
+
+$main: #98cb51;
+$white: #FFFFFF;
+$black: #000000;
+$darkGrey: #323031;
+$lightGrey: #d0d2d3;
+$alertRed: #FF0000; // new! fav!
+
+@import "colours-default";
+
+// CUSTOM COLOURS
+$BKG: #5a1e15;
+// END CUSTOM COLOURS
+
+@import "colours-styles";
+
+/***
+  * CUSTOM STYLING
+  ***/
+.content { // no-repeat, cover, center center, fixed
+  background: $BKG;
+  //background-image: url('../background.jpg');
+}
+.loader .content {
+  background-image: url('../splash_7201280.png');
+  background-position: center center;
+}
+
+nav#header .logo {
+  height: 60%;
+}
+
+body.news {
+  .shortcuts {
+    > a {
+      background: $main;
+      &:after {
+        display: none;
+      }
+    }
+    > .custom_icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../assets/top10.png");
+      > div {
+        padding-top: calc(12vw + 20px);
+      }
+    }
+  }
+}
+nav#menu ul li .icon.custom_icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../assets/top10.png");
+  top: 3px;
+}
