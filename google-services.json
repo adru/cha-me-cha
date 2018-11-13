@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "477779543707",
+    "firebase_url": "https://cha-me-cha-ddb4d.firebaseio.com",
+    "project_id": "cha-me-cha-ddb4d",
+    "storage_bucket": "cha-me-cha-ddb4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477779543707:android:77161c8081b69e58",
+        "android_client_info": {
+          "package_name": "guru.trueblue.chamecha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477779543707-mdhv626qnmbhrj1lco5jpu39mltmrhce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiigKJ5RLmaUcpe4Vyi94KkIlBdqZuG4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477779543707:android:2a126ba6895acb37",
+        "android_client_info": {
+          "package_name": "guru.trueblue.fcmchamecha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477779543707-mdhv626qnmbhrj1lco5jpu39mltmrhce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiigKJ5RLmaUcpe4Vyi94KkIlBdqZuG4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

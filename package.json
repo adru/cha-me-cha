@@ -1,0 +1,15 @@
+{
+  "name": "guru.trueblue.fcmchamecha",
+  "version": "1.1.0",
+  "displayName": "Cha Me. Cha",
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-ios": "latest",
+    "cordova-android": "~7.0.0"
+  }
+}
