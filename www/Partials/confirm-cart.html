@@ -6,7 +6,7 @@
               </a>
               <div class="inner">
                 <div class="header">
-                  <h4>{{::(clientInfo.stripe_flag == 1) ? text.orderDetails : text.finalizeOrder}}</h4>
+                  <h4>{{::(clientInfo.stripe_flag == 1 || clientInfo.moneris_flag == 1) ? text.orderDetails : text.finalizeOrder}}</h4>
                 </div>
                 <section class="variable location">
                   <span class="subtitle">{{text.custom.pickupLocation || text.pickupLocation}}</span>
@@ -86,8 +86,8 @@
                 </section>
                 <div class="short error"></div>
               </div>
-              <input type="submit" name="submit" value="{{text.enterPaymentDetails}}" submit-btn class="centered" ng-click="submitCart('payment')" ng-if="allowOrder == 'open' && clientInfo.stripe_flag == 1" ng-show="goodOrder" />
-              <input type="submit" name="submit" value="{{text.submitCart}}" submit-btn class="centered" ng-click="submitCart()" ng-if="allowOrder == 'open' && clientInfo.stripe_flag != 1" ng-show="goodOrder" />
+              <input type="submit" name="submit" value="{{text.enterPaymentDetails}}" submit-btn class="centered" ng-click="submitCart('payment')" ng-if="allowOrder == 'open' && (clientInfo.stripe_flag == 1 || clientInfo.moneris_flag == 1)" ng-show="goodOrder" />
+              <input type="submit" name="submit" value="{{text.submitCart}}" submit-btn class="centered" ng-click="submitCart()" ng-if="allowOrder == 'open' && (clientInfo.stripe_flag != 1 && clientInfo.moneris_flag != 1)" ng-show="goodOrder" />
             </form>
             <div class="clear"></div>
           </article>
