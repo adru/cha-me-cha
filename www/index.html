@@ -118,7 +118,7 @@
             <div class="icon" rel="leaderboard"></div>
             {{text.menuLeaderboard}}
           </a>
-          <div class="liner width"></div>
+          <div class="liner width" ng-if="pages.length > 0"></div>
         </li>
         <li ng-repeat="page in pages track by $index" ng-if="pages">
           <a href="#page/{{::page.id}}/" ng-class="{'selected' : currentParent == '{{::page.label | getTranslation:'ENG' | lowercaseTrim}}', 'noicon' : !page.icon || page.icon == ''}" ng-click="closeMenu($event)">

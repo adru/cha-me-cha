@@ -266,6 +266,9 @@ a, a:link, a:active, a:visited {
 .alignRight {
   text-align: right !important; }
 
+.overflowHidden {
+  overflow: hidden; }
+
 /***
   * SERVER
   ***/

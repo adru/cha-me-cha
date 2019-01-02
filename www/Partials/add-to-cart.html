@@ -48,7 +48,7 @@
                       <div class="icon" rel="close" ng-click="removeVariableItem(tpv.selected, tpvs);"></div>
                     </div>
                   </div>
-                  <div class="add_variable_item short bar" ng-click="addVariableItem(tpv, tpv.select_limit);" ng-if="!tpv.selected && tpv.select_limit != 1 || tpv.selected.length < tpv.select_limit">{{text.cartAddOption}}</div>
+                  <div class="add_variable_item short bar" ng-click="addVariableItem(tpv, tpv.select_limit);" ng-if="tpv.select_limit === 0 || !tpv.selected && tpv.select_limit != 1 || tpv.selected.length < tpv.select_limit">{{text.cartAddOption}}</div>
                 </section>
                 <section class="subtotal">
                   <span class="subtitle">{{text.cartSubtotal}}</span>
